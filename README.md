@@ -85,3 +85,6 @@ This project is deployed at this Vercel URL.
 ```
 https://arklab-ai-agents.vercel.app
 ```
+
+- While deploying on vercel, I faced a couple of issues like unused variables, vercel not recognizing exports etc. Hence,the extra `chore` commits on this repository.
+- However, they are all miniscule problems that I easily solved by refactoring code or removing unused variables.
