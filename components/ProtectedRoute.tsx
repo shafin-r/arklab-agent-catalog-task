@@ -21,7 +21,6 @@ export default function ProtectedRoute({
 
     if (!session) {
       // Redirect to login
-      const currentUrl = window.location.pathname;
       router.push(`${redirectTo}`);
     }
   }, [session, status, router, redirectTo]);

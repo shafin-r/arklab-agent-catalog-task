@@ -51,7 +51,7 @@ export default function LoginPage() {
         router.push(callbackUrl);
       }
     } catch (err) {
-      setError("An unexpected error occurred");
+      setError("An unexpected error occurred. Error: " + err);
     } finally {
       setIsLoading(false);
     }
