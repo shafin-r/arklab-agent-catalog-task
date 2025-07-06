@@ -34,10 +34,6 @@ export function AgentsCatalog({ initialAgents }: AgentsCatalogProps) {
     <div className="space-y-8">
       <FilterControls />
 
-      <div className="text-center text-gray-600">
-        Showing {filteredAgents.length} of {initialAgents.length} agents
-      </div>
-
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         initial={{ opacity: 0 }}
@@ -76,6 +72,9 @@ export function AgentsCatalog({ initialAgents }: AgentsCatalogProps) {
           </p>
         </motion.div>
       )}
+      <div className="text-center text-gray-600">
+        Showing {filteredAgents.length} of {initialAgents.length} agents
+      </div>
     </div>
   );
 }
